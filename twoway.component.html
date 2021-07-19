@@ -1,0 +1,18 @@
+
+<div>
+    <h2> Two Way Data Binding </h2>
+    Name : {{name}} <br>
+    Age : {{age}}
+    <hr><hr>
+
+    Name : <input type="text" [(ngModel)]= "name" /> <br>
+    Age : <input type="text" [(ngModel)]= "age" /> <br> 
+
+     <input type="button" value="Submit" (click)="handleSub()"/> <br>
+     NumberOne : <input type="number" [(ngModel)]="one" /><br>
+     NumberTwo : <input type="number" [(ngModel)]="two" /> <br>
+     <input type="button" value="Sum" (click)="sum()" />
+     <input type="button" value="Subtract" (click)="subtract()" /> 
+     <input type="button" value="Product" (click)="product()" /> <br>
+     {{msg}}
+</div>
